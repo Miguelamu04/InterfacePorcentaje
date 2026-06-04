@@ -17,22 +17,22 @@ body {
 }
 
 header {
-    height: 15.38%; /* 120/780×100 = 15.38% */
+    height: 15.385%; /* 120/780×100 = 15.385% */
     display: flex;
     align-items: center;
-    gap: 1.67%; /* 20/1200×100 = 1.67% */
-    padding: 0 1.67%; /* 20/1200×100 = 1.67% */
+    gap: 1.667%; /* 20/1200×100 = 1.667% */
+    padding: 0 1.667%; /* 20/1200×100 = 1.667% */
     background-color: #e6e6f7;
 }
 
 .logo {
-    width: 6.67%; /* 80/1200×100 = 6.67% */
-    height: 66.67%; /* 80/120×100 = 66.67% relativo al header */
+    width: 6.667%; /* 80/1200×100 = 6.667% */
+    height: 66.667%; /* 80/120×100 = 66.667% relativo al header */
     flex-shrink: 0;
 }
 
 nav {
-    height: 7.69%; /* 60/780×100 = 7.69% */
+    height: 7.692%; /* 60/780×100 = 7.692% */
     display: flex;
     align-items: center;
     background-color: #dceaf7;
@@ -46,7 +46,7 @@ nav .boton {
 .nav-4 .boton {
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 20.08%; /* 4×20.08=80.33% caben / 5×20.08=100.42% no caben */
+    flex-basis: 20.083%; /* 4×20.083=80.333% caben / 5×20.083=100.417% no caben */
 }
 
 .nav-4 .boton.inicio {
@@ -55,27 +55,26 @@ nav .boton {
 
 .nav-5 .boton {
     flex-shrink: 1;
-    flex-basis: 20.08%; /* Misma medida inicial que nav-4 */
+    flex-basis: 20.083%; /* Misma medida inicial que nav-4 */
 }
 
 .cuerpo {
-    min-height: 66.67%; /* 520/780×100 = 66.67% */
+    min-height: 66.667%; /* 520/780×100 = 66.667% */
     background-color: #eef4ee;
     display: flex;
 }
 
 aside {
-    width: 14.17%; /* 14.17+1.25+1.25 = 16.67% total */
-    padding: 1.67% 1.25%; /* 20/1200×100 = 1.67% / 15/1200×100 = 1.25% */
+    width: 14.167%; /* 14.167+1.25+1.25 = 16.667% total */
+    padding: 1.667% 1.25%; /* 20/1200×100 = 1.667% / 15/1200×100 = 1.25% */
     flex-shrink: 0;
 }
 
 aside .titulo-menu {
     text-align: center;
-    font-size: 16px;
-    margin: 0 0 7.06% 0; /* 12/170×100 = 7.06% */
-    padding-bottom: 4.71%; /* 8/170×100 = 4.71% */
-    border-bottom: 2px solid #7070c0;
+    font-size: 100%; /* 16/16×100 = 100% del tamaño base del navegador */
+    margin: 0 0 7.059% 0; /* 12/170×100 = 7.059% */
+    padding-bottom: 4.706%; /* 8/170×100 = 4.706% */
     color: #7070c0;
 }
 
@@ -89,7 +88,7 @@ aside ul {
 }
 
 aside ul li {
-    padding: 4.71% 5.88%; /* 8/170×100 = 4.71% / 10/170×100 = 5.88% */
+    padding: 4.706% 5.882%; /* 8/170×100 = 4.706% / 10/170×100 = 5.882% */
     background-color: #dceaf7;
     cursor: pointer;
 }
@@ -100,7 +99,7 @@ aside ul li:hover {
 }
 
 main {
-    width: 83.33%; /* 1000/1200×100 = 83.33% */
+    width: 83.333%; /* 1000/1200×100 = 83.333% */
     background-color: #ffffff;
 }
 
@@ -117,7 +116,7 @@ main .caja-imagenes {
 }
 
 main .caja-imagenes article {
-    margin: 4.9%; /* 25/510×100 = 4.9% */
+    margin: 4.902%; /* 25/510×100 = 4.902% */
 }
 
 main .caja-imagenes img {
@@ -127,7 +126,7 @@ main .caja-imagenes img {
 }
 
 footer {
-    height: 10.26%; /* 80/780×100 = 10.26% */
+    height: 10.256%; /* 80/780×100 = 10.256% */
     line-height: 80px; /* Se mantiene en px, el % de line-height se calcula sobre el font-size */
     text-align: center;
     background-color: #e6e6f7;
