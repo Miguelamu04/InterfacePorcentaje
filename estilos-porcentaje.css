@@ -85,7 +85,7 @@ aside ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 6px; /* Se mantiene en px, el % de gap se calcula sobre la altura y no hay altura definida */
+    gap: 6px; /* Se mantiene en px*/
 }
 
 aside ul li {
@@ -128,7 +128,7 @@ main .caja-imagenes img {
 
 footer {
     height: 10.26%; /* 80/780×100 = 10.26% */
-    line-height: 80px; /* Se mantiene en px, el % de line-height se calcula sobre el font-size */
+    line-height: 80px; /* Se mantiene en px*/
     text-align: center;
     background-color: #e6e6f7;
 }
