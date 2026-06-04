@@ -12,7 +12,7 @@ body {
 
 .contenedor {
     width: 100%;
-    height: 100%; /* Propaga la altura al contenedor */
+    height: 100%; /* se ajusta a la altura al contenedor */
     background-color: #ffffff;
 }
 
