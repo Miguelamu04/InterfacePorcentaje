@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web en % - 5 botones</title>
+    <link rel="stylesheet" href="estilos-por.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <img class="logo" src="imagenes/material.png" alt="Logo">
+            <h1>Mi Web</h1>
+        </header>
+        <!--
+            EXPLICACIÓN FLEX — NAV con 5 botones (nav-5)
+            Todos los botones parten del mismo flex-basis: 20.08% (241/1200×100).
+            5 × 20.08% = 100.42% > 100%: se pasan un 0.42% del nav.
+
+            flex-shrink: 1 en todos los botones → el déficit se reparte igual entre los 5:
+              · Cada botón encoge 0.084% → ancho final: ≈ 19.996% por botón.
+              · 5 × 19.996% ≈ 100%: encajan exactamente en el contenedor.
+
+            Resultado: los 5 botones caben ajustados sin desbordar el nav.
+            Al pulsar "Inicio" se vuelve a index-por.html (la versión con 4 botones).
+        -->
+        <nav class="nav-5">
+            <a href="index-por.html" class="boton inicio">Inicio</a>
+            <a href="#" class="boton">Nosotros</a>
+            <a href="#" class="boton">Servicios</a>
+            <a href="#" class="boton">Productos</a>
+            <a href="#" class="boton">Contacto</a>
+        </nav>
+        <div class="cuerpo">
+            <aside>
+                <h2 class="titulo-menu">Menú</h2>
+                <ul>
+                    <li>Opción 1</li>
+                    <li>Opción 2</li>
+                    <li>Opción 3</li>
+                    <li>Opción 4</li>
+                    <li>Opción 5</li>
+                    <li>Opción 6</li>
+                </ul>
+            </aside>
+            <main>
+                <div class="caja-texto">
+                    <p>Bienvenido a este sitio de práctica de maquetación con HTML y CSS. Aquí se trabaja la estructura de una web con cabecera, navegación, menú lateral, contenido principal y pie de página.</p>
+                    <p>El objetivo es reproducir un boceto usando medidas en porcentaje y aplicar Flexbox tanto en el menú de navegación como en la disposición de las cajas.</p>
+                    <p>La altura de esta zona se ajusta al contenido, sin imponer una medida fija, de modo que crece o decrece según el texto que se incluya.</p>
+                </div>
+                <section class="caja-imagenes">
+                    <article>
+                        <img src="imagenes/logotipo.png" alt="Imagen 1">
+                        <h4>Título de la imagen 1</h4>
+                        <p>Descripción o texto relacionado con la imagen 1.</p>
+                    </article>
+                    <article>
+                        <img src="imagenes/Logo.png" alt="Imagen 2">
+                        <h4>Título de la imagen 2</h4>
+                        <p>Descripción de la imagen 2.</p>
+                    </article>
+                </section>
+            </main>
+        </div>
+        <footer>
+            © 2024 Mi Sitio Web -- Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>

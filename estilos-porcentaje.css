@@ -1,0 +1,147 @@
+html {
+    width: 1200px; /* Pixeles de referencia para los % de ancho */
+    height: 780px; /* Pixeles de referencia para los % de alto */
+    margin: 0 auto;
+}
+
+body {
+    height: 100%; /* Propaga la altura de html al body */
+    margin: 0;
+    background-color: #d9d9e3;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100%; /* Propaga la altura al contenedor */
+    background-color: #ffffff;
+}
+
+header {
+    height: 15.38%; /* 120/780×100 = 15.38% */
+    display: flex;
+    align-items: center;
+    gap: 1.67%; /* 20/1200×100 = 1.67% */
+    padding: 0 1.67%; /* 20/1200×100 = 1.67% */
+    background-color: #e6e6f7;
+}
+
+.logo {
+    width: 6.67%; /* 80/1200×100 = 6.67% */
+    height: 66.67%; /* 80/120×100 = 66.67% relativo al header */
+    flex-shrink: 0;
+}
+
+nav {
+    height: 7.69%; /* 60/780×100 = 7.69% */
+    display: flex;
+    align-items: center;
+    background-color: #dceaf7;
+}
+
+nav .boton {
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-4 .boton {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 20.08%; /* 4×20.08=80.33% caben / 5×20.08=100.42% no caben */
+}
+
+.nav-4 .boton.inicio {
+    flex-grow: 3;
+}
+
+.nav-5 .boton {
+    flex-shrink: 1;
+    flex-basis: 20.08%; /* Misma medida inicial que nav-4 */
+}
+
+.cuerpo {
+    min-height: 66.67%; /* 520/780×100 = 66.67% */
+    background-color: #eef4ee;
+    display: flex;
+}
+
+aside {
+    width: 14.17%; /* 14.17+1.25+1.25 = 16.67% total */
+    padding: 1.67% 1.25%; /* 20/1200×100 = 1.67% / 15/1200×100 = 1.25% */
+    flex-shrink: 0;
+}
+
+aside .titulo-menu {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 0 7.06% 0; /* 12/170×100 = 7.06% */
+    padding-bottom: 4.71%; /* 8/170×100 = 4.71% */
+    border-bottom: 2px solid #7070c0;
+    color: #7070c0;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 6px; /* Se mantiene en px, el % de gap se calcula sobre la altura y no hay altura definida */
+}
+
+aside ul li {
+    padding: 4.71% 5.88%; /* 8/170×100 = 4.71% / 10/170×100 = 5.88% */
+    background-color: #dceaf7;
+    cursor: pointer;
+}
+
+aside ul li:hover {
+    background-color: #7070c0;
+    color: #ffffff;
+}
+
+main {
+    width: 83.33%; /* 1000/1200×100 = 83.33% */
+    background-color: #ffffff;
+}
+
+main .caja-texto {
+    float: left;
+    width: 45.5%; /* 45.5+2.5+1 = 49% total */
+    padding: 2.5% 1% 2.5% 2.5%; /* 25/1000×100 = 2.5% / 10/1000×100 = 1% */
+}
+
+main .caja-imagenes {
+    margin-left: 49%; /* Ancho total de caja-texto */
+    width: 46%; /* 46+2.5+2.5 = 51% total */
+    padding: 2.5%; /* 25/1000×100 = 2.5% */
+}
+
+main .caja-imagenes article {
+    margin: 4.9%; /* 25/510×100 = 4.9% */
+}
+
+main .caja-imagenes img {
+    width: 100%; /* Ancho del contenido de caja-imagenes */
+    height: 200px; /* Sin padre con altura definida, se mantiene en px */
+    display: block;
+}
+
+footer {
+    height: 10.26%; /* 80/780×100 = 10.26% */
+    line-height: 80px; /* Se mantiene en px, el % de line-height se calcula sobre el font-size */
+    text-align: center;
+    background-color: #e6e6f7;
+}
+
+/* Pantallas menores de 768px: aside y main pasan a columna */
+@media (max-width: 768px) {
+    .cuerpo {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        padding: 1.25%; /* 15/1200×100 = 1.25% */
+        box-sizing: border-box;
+    }
+}
