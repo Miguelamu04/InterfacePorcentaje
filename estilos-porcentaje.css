@@ -132,7 +132,7 @@ footer {
     background-color: #e6e6f7;
 }
 
-/* Pantallas menores de 768px: aside y main pasan a columna */
+/* Pantallas pequeñas de 768px: aside y main pasan a columna */
 @media (max-width: 768px) {
     .cuerpo {
         flex-direction: column;
